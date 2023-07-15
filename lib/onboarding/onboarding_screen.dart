@@ -28,25 +28,66 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ],
           ),
           Container(
-            alignment: Alignment(0, 0.60),
+            alignment: Alignment(0, 0.55),
             child: SmoothPageIndicator(
               controller: _controller,
               effect: ExpandingDotsEffect(),
               count: 3,
             ),
           ),
-          Container(
-            alignment: Alignment(0, 0.80),
-            child: ElevatedButton(
-              onPressed: () {},
-              child: Text('Register'),
-            ),
-          ),
-          Container(
-            alignment: Alignment(0, 0.95),
-            child: OutlinedButton(
-              onPressed: () {},
-              child: Text('Login'),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.deepPurpleAccent[200],
+                      padding: EdgeInsets.all(15),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      'Register',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: double.infinity,
+                  child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 1.0,
+                        color: Colors.deepPurpleAccent,
+                      ),
+                      padding: EdgeInsets.all(15),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                        color: Colors.deepPurpleAccent[200],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 10),
+              ],
             ),
           ),
         ],
