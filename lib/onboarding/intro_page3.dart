@@ -33,7 +33,7 @@ class IntroPage3 extends StatelessWidget {
               height: 15,
             ),
             Text(
-              'Find a supportive community along your\nlearnineg journey',
+              'Develop your coding skills for free while\nhaving fun and learning with others',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
             ),
