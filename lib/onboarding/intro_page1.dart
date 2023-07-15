@@ -1,10 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class Onboarding1 extends StatelessWidget {
-  const Onboarding1({super.key});
+class IntroPage1 extends StatelessWidget {
+  const IntroPage1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +16,6 @@ class Onboarding1 extends StatelessWidget {
             Container(
               height: 200,
               child: Image.asset('assets/community.png'),
-            ),
-            SmoothPageIndicator(
-              controller: PageController(),
-              count: 3,
             ),
           ],
         ),
