@@ -29,6 +29,14 @@ class IntroPage3 extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+              'Find a supportive community along your\nlearnineg journey',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
+            ),
           ],
         ),
       ),
