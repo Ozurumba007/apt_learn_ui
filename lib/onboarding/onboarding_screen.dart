@@ -1,7 +1,9 @@
 import 'package:apt_learn_design/onboarding/intro_page1.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../login/login_screen.dart';
 import 'intro_page2.dart';
 import 'intro_page3.dart';
 
@@ -75,7 +77,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () => Get.off(
+                      LoginScreen(),
+                    ),
                     child: Text(
                       'Login',
                       style: TextStyle(
