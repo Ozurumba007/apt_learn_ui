@@ -11,13 +11,27 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            height: 50,
-            child: Image.asset('assets/apt_learn_logo.png'),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(height: 50),
+              Center(
+                child: Container(
+                  height: 70,
+                  child: Image.asset('assets/apt_learn_logo.png'),
+                ),
+              ),
+              SizedBox(height: 20),
+              Text(
+                'Welcome back!',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 50),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
