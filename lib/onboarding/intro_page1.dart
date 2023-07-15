@@ -25,7 +25,7 @@ class IntroPage1 extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
             SizedBox(
-              height: 25,
+              height: 20,
             ),
             Text(
               'Enroll in techinal and non-technical courses that will help bridge the knowledge gap',
