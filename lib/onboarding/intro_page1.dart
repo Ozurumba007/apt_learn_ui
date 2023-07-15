@@ -15,6 +15,7 @@ class IntroPage1 extends StatelessWidget {
           children: [
             Container(
               height: 200,
+              alignment: Alignment(0, 0.25),
               child: Image.asset('assets/community.png'),
             ),
           ],

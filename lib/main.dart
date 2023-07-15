@@ -1,6 +1,5 @@
+import 'package:apt_learn_design/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
-
-import 'onboarding/intro_page1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // home: const (),
+      home: const OnboardingScreen(),
     );
   }
 }
