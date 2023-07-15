@@ -8,6 +8,7 @@ class IntroPage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
@@ -18,6 +19,19 @@ class IntroPage1 extends StatelessWidget {
               alignment: Alignment(0, 0.25),
               child: Image.asset('assets/community.png'),
             ),
+            Text(
+              'Acquire on-demand tech skills\nfrom top educators',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            SizedBox(
+              height: 25,
+            ),
+            Text(
+              'Enroll in techinal and non-technical courses that will help bridge the knowledge gap',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
+            )
           ],
         ),
       ),

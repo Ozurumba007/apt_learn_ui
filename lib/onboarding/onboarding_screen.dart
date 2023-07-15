@@ -28,10 +28,25 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ],
           ),
           Container(
-            alignment: Alignment(0, 0.75),
+            alignment: Alignment(0, 0.60),
             child: SmoothPageIndicator(
               controller: _controller,
+              effect: ExpandingDotsEffect(),
               count: 3,
+            ),
+          ),
+          Container(
+            alignment: Alignment(0, 0.80),
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text('Register'),
+            ),
+          ),
+          Container(
+            alignment: Alignment(0, 0.95),
+            child: OutlinedButton(
+              onPressed: () {},
+              child: Text('Login'),
             ),
           ),
         ],
