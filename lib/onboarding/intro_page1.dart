@@ -15,7 +15,11 @@ class IntroPage1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              height: 200,
+              height: 50,
+              child: Image.asset('assets/apt_learn_logo.png'),
+            ),
+            SizedBox(height: 50),
+            Container(
               alignment: Alignment(0, 0.25),
               child: Image.asset('assets/community.png'),
             ),
@@ -25,7 +29,7 @@ class IntroPage1 extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
             SizedBox(
-              height: 20,
+              height: 15,
             ),
             Text(
               'Enroll in techinal and non-technical courses that will help bridge the knowledge gap',
