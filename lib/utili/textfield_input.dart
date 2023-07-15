@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TextfieldInput extends StatelessWidget {
-  const TextfieldInput({super.key});
+  final String hintText;
+  const TextfieldInput({super.key, required this.hintText});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class TextfieldInput extends StatelessWidget {
         child: TextFormField(
           decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: 'Email or Username',
+            hintText: hintText,
           ),
         ),
       ),
