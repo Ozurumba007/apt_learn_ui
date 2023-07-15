@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ElevatedButtonStyle extends StatelessWidget {
-  const ElevatedButtonStyle({super.key});
+  final String text;
+  const ElevatedButtonStyle({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class ElevatedButtonStyle extends StatelessWidget {
         ),
         onPressed: () {},
         child: Text(
-          'Register',
+          text,
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

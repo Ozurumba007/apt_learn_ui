@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 
 class TextfieldInput extends StatelessWidget {
   final String hintText;
-  const TextfieldInput({super.key, required this.hintText});
+  final Widget? suffixIcon;
+  final bool obscureText;
+  const TextfieldInput(
+      {super.key,
+      required this.hintText,
+      this.suffixIcon,
+      required this.obscureText});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +24,9 @@ class TextfieldInput extends StatelessWidget {
           decoration: InputDecoration(
             border: InputBorder.none,
             hintText: hintText,
+            suffixIcon: suffixIcon,
           ),
+          obscureText: obscureText,
         ),
       ),
     );

@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../login/login_screen.dart';
+import '../utili/elevated_button.dart';
 import 'intro_page2.dart';
 import 'intro_page3.dart';
 
@@ -42,6 +43,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
+                ElevatedButtonStyle(
+                  text: 'Register',
+                ),
                 SizedBox(height: 10),
                 Container(
                   width: double.infinity,
