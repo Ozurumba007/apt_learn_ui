@@ -18,7 +18,7 @@ class IntroPage2 extends StatelessWidget {
               height: 50,
               child: Image.asset('assets/apt_learn_logo.png'),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 30),
             Container(
               height: 200,
               alignment: Alignment(0, 0.25),
@@ -33,7 +33,7 @@ class IntroPage2 extends StatelessWidget {
               height: 15,
             ),
             Text(
-              'Find a supportive community along your\nlearning journey',
+              'Find a supportive community along your\nlearnineg journey',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
             )
