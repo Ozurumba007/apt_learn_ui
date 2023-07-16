@@ -1,6 +1,8 @@
 import 'package:apt_learn_design/utili/textfield_input.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../signUp/signUp_screen.dart';
 import '../utili/elevated_button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -61,6 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 15),
                 ElevatedButtonStyle(
                   text: 'Login',
+                  onPressed: () {},
                 ),
                 SizedBox(height: 20),
                 Row(
@@ -74,7 +77,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => Get.to(
+                        () => SignUpScreen(),
+                      ),
                       child: Text(
                         'Sign Up',
                         style: TextStyle(

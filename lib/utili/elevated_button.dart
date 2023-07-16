@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class ElevatedButtonStyle extends StatelessWidget {
   final String text;
-  const ElevatedButtonStyle({super.key, required this.text});
+  final void Function()? onPressed;
+  const ElevatedButtonStyle({super.key, required this.text, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class ElevatedButtonStyle extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
           text,
           style: TextStyle(

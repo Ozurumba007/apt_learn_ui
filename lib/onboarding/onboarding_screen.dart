@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../login/login_screen.dart';
+import '../signUp/signUp_screen.dart';
 import '../utili/elevated_button.dart';
 import 'intro_page2.dart';
 import 'intro_page3.dart';
@@ -45,6 +46,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               children: [
                 ElevatedButtonStyle(
                   text: 'Register',
+                  onPressed: () => Get.off(
+                    () => SignUpScreen(),
+                  ),
                 ),
                 SizedBox(height: 10),
                 Container(
@@ -61,7 +65,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ),
                     ),
                     onPressed: () => Get.off(
-                      LoginScreen(),
+                      () => LoginScreen(),
                     ),
                     child: Text(
                       'Login',
