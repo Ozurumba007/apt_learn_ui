@@ -2,6 +2,7 @@ import 'package:apt_learn_design/utili/textfield_input.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../forgot_pass_screen/forgot_password_screen.dart';
 import '../signUp/signUp_screen.dart';
 import '../utili/elevated_button.dart';
 
@@ -49,7 +50,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => Get.to(
+                        () => ForgotPassword(),
+                      ),
                       child: Text(
                         'Forgot Password',
                         style: TextStyle(
