@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../home_screen/home_screen.dart';
 import '../utili/elevated_button.dart';
 import '../utili/textfield_input.dart';
 import '../login/login_screen.dart';
@@ -60,7 +61,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 SizedBox(height: 15),
                 ElevatedButtonStyle(
                   text: 'Sign Up',
-                  onPressed: () {},
+                  onPressed: () => Get.off(
+                    () => HomeScreen(),
+                  ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

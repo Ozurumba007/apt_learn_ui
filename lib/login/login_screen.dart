@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../forgot_pass_screen/forgot_password_screen.dart';
+import '../home_screen/home_screen.dart';
 import '../signUp/signUp_screen.dart';
 import '../utili/elevated_button.dart';
 
@@ -66,7 +67,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 15),
                 ElevatedButtonStyle(
                   text: 'Login',
-                  onPressed: () {},
+                  onPressed: () => Get.off(
+                    () => HomeScreen(),
+                  ),
                 ),
                 SizedBox(height: 20),
                 Row(
