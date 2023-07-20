@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
-class AppBar extends StatelessWidget {
-  const AppBar({super.key});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.deepPurpleAccent[200],
-      height: 80,
+      height: 75,
       width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
+              const SizedBox(width: 10),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.blue,
@@ -21,7 +22,7 @@ class AppBar extends StatelessWidget {
                 ),
                 height: 50,
                 width: 50,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'O',
                     style: TextStyle(
@@ -31,7 +32,7 @@ class AppBar extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(width: 20),
+              const SizedBox(width: 15),
               const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,7 +55,7 @@ class AppBar extends StatelessWidget {
               ),
             ],
           ),
-          Row(
+          const Row(
             children: [
               Icon(
                 Icons.notifications_none_outlined,
