@@ -15,32 +15,6 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             // custom appbar
-            Container(
-              color: Colors.deepPurpleAccent[200],
-              height: 80,
-              width: double.infinity,
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    height: 50,
-                    width: 50,
-                    child: Center(
-                      child: Text(
-                        'O',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
           ],
         ),
       ),

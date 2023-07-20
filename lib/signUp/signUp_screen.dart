@@ -22,14 +22,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 Center(
                   child: Container(
                     height: 70,
                     child: Image.asset('assets/apt_learn_logo.png'),
                   ),
                 ),
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 Text(
                   'Welcome to aptLearn!',
                   style: TextStyle(
@@ -37,7 +37,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 50),
+                SizedBox(height: 30),
                 TextfieldInput(
                   hintText: 'Full name',
                   obscureText: false,
