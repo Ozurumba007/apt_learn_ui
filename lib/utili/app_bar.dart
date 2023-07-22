@@ -55,7 +55,7 @@ class CustomAppBar extends StatelessWidget {
               ),
             ],
           ),
-          const Row(
+          Row(
             children: [
               Icon(
                 Icons.notifications_none_outlined,
@@ -63,11 +63,6 @@ class CustomAppBar extends StatelessWidget {
                 color: Colors.white,
               ),
               SizedBox(width: 20),
-              Icon(
-                Icons.dashboard_outlined,
-                size: 30,
-                color: Colors.white,
-              ),
               SizedBox(width: 10),
             ],
           ),

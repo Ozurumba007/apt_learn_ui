@@ -15,7 +15,7 @@ class IntroPage1 extends StatelessWidget {
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               Container(
                 height: 50,
                 child: Image.asset('assets/apt_learn_logo.png'),
