@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utili/categories.dart';
+import '../utili/courses.dart';
 import '../utili/two_text.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -59,7 +60,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         actions: [
-          const Icon(Icons.notifications, size: 30, color: Colors.white),
+          const Icon(
+            Icons.notifications_none_outlined,
+            size: 30,
+            color: Colors.white,
+          ),
           const SizedBox(width: 10),
           IconButton(
             onPressed: () {
@@ -80,6 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              SizedBox(height: 20),
               Container(
                 height: 200,
                 child: Image.asset('assets/community.png'),
@@ -108,25 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 firstText: 'Ongoing Courses',
                 secondText: 'View All',
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Container(
-                  height: 150,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[100],
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 100,
-                        child: Image.asset('assets/download.jpg'),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+              Course(),
               const TwoText(
                 firstText: 'Recommended Courses',
                 secondText: 'View All',
