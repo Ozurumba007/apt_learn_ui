@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utili/categories.dart';
+import '../utili/two_text.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -37,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        title: Column(
+        title: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -58,8 +59,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         actions: [
-          Icon(Icons.notifications, size: 30, color: Colors.white),
-          SizedBox(width: 10),
+          const Icon(Icons.notifications, size: 30, color: Colors.white),
+          const SizedBox(width: 10),
           IconButton(
             onPressed: () {
               if (scaffoldKey.currentState!.isEndDrawerOpen) {
@@ -68,13 +69,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 scaffoldKey.currentState!.openEndDrawer();
               }
             },
-            icon: Icon(Icons.dashboard_outlined),
+            icon: const Icon(Icons.dashboard_outlined),
             iconSize: 30,
             color: Colors.white,
           ),
         ],
       ),
-      endDrawer: Drawer(),
+      endDrawer: const Drawer(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -97,33 +98,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              Categories(
+              const Categories(
                 text: 'All',
                 secondCategorytext: 'Technical Courses',
                 thirdCategorytext: 'Non-technical Courses',
               ),
-              SizedBox(height: 10),
-              Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Ongoing Courses',
-                      style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Text(
-                      'View All',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ],
-                ),
+              const SizedBox(height: 10),
+              TwoText(
+                firstText: 'Ongoing Courses',
+                secondText: 'View All',
+              ),
+              TwoText(
+                firstText: 'Recommended Courses',
+                secondText: 'View All',
               ),
             ],
           ),
@@ -132,19 +119,19 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.menu_book_outlined),
             label: 'Course',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.play_circle_outline),
             label: 'Enrollments',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.code_outlined),
             label: 'Code',
           ),
