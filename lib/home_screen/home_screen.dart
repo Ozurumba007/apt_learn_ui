@@ -76,56 +76,79 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       endDrawer: Drawer(),
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              height: 200,
-              child: Image.asset('assets/community.png'),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.0),
-              child: Row(
-                children: [
-                  Text(
-                    'Explore Categories',
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 200,
+                child: Image.asset('assets/community.png'),
               ),
-            ),
-            Categories(
-              text: 'All',
-              secondCategorytext: 'Technical Courses',
-              thirdCategorytext: 'Non-technical Courses',
-            ),
-            SizedBox(height: 10),
-            Padding(
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Ongoing Courses',
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                child: Row(
+                  children: [
+                    Text(
+                      'Explore Categories',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  Text(
-                    'View All',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+              Categories(
+                text: 'All',
+                secondCategorytext: 'Technical Courses',
+                thirdCategorytext: 'Non-technical Courses',
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Ongoing Courses',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      'View All',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.menu_book_outlined),
+            label: 'Course',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.play_circle_outline),
+            label: 'Enrollments',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.code_outlined),
+            label: 'Code',
+          ),
+        ],
       ),
     );
   }
