@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utili/categories.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -93,6 +95,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
+            ),
+            Categories(
+              text: 'All',
+              secondCategorytext: 'Technical Courses',
+              thirdCategorytext: 'Non-technical Courses',
             ),
           ],
         ),
