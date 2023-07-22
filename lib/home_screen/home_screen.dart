@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: Colors.purpleAccent[200],
+        backgroundColor: Colors.deepPurple[400],
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
@@ -57,6 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: [
           Icon(Icons.notifications, size: 30, color: Colors.white),
+          SizedBox(width: 10),
           IconButton(
             onPressed: () {
               if (scaffoldKey.currentState!.isEndDrawerOpen) {
@@ -92,26 +93,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-            ),
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.amber[200],
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      'All',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
             ),
           ],
         ),
