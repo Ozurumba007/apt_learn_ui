@@ -104,11 +104,30 @@ class _HomeScreenState extends State<HomeScreen> {
                 thirdCategorytext: 'Non-technical Courses',
               ),
               const SizedBox(height: 10),
-              TwoText(
+              const TwoText(
                 firstText: 'Ongoing Courses',
                 secondText: 'View All',
               ),
-              TwoText(
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Container(
+                  height: 150,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100],
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 100,
+                        child: Image.asset('assets/download.jpg'),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const TwoText(
                 firstText: 'Recommended Courses',
                 secondText: 'View All',
               ),
