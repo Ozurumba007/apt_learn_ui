@@ -15,7 +15,7 @@ class Categories extends StatelessWidget {
     return Row(
       children: [
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),

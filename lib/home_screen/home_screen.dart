@@ -83,13 +83,13 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Image.asset('assets/community.png'),
             ),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15.0),
+              padding: EdgeInsets.symmetric(horizontal: 10.0),
               child: Row(
                 children: [
                   Text(
                     'Explore Categories',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -100,6 +100,29 @@ class _HomeScreenState extends State<HomeScreen> {
               text: 'All',
               secondCategorytext: 'Technical Courses',
               thirdCategorytext: 'Non-technical Courses',
+            ),
+            SizedBox(height: 10),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Ongoing Courses',
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    'View All',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
